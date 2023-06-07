@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My-Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="audio">
+    <audio controls class="audio">
+        <source src="The Script The Man Who Can T Be Moved Official Video.mp3" type="audio/ogg">
+    </audio>
+</div>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">AICS</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+ 
+        </div> 
+        <div class="content">
+            <h1>Hi Im Dave Altabano <br><span>This is my website</span> <br>Have fun exploring</h1>
+            <div class="card">
+                <img class="img" src="dave.png" alt="">
+</div>
+
+                <a href="#about"><button class="btn">Start exploring</button></a>
+            </div>
+             </div> 
+           </div>
+        <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="3.jpg">
+                </div>
+                <div class="about-col-2">
+              <h1 class="sub">About me</h1>
+              <h>Hi im Dave Emmanuel A Altabano</h>  
+              <p>I am a Web Developer Student currently Grade 11, Student at Aics<br>
+                Meycauayan Branch.i like playing basketball and video games when 
+                im free</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('educations')">Educations</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>JavaScript</span><br>-Making Website</li>
+                        <li><span>Java</span><br>-Making Simple Game</li>
+                        <li><span>computerLiterate</span><br>-Building Computer</li>
+                    </ul>   
+                </div>
+                <div class="tab-contents" id="educations">
+                    <ul>
+                        <li><span>Elementary</span><br>-Lawa Elementary School<br>2011-2016</li>
+                        <li><span>Junior High School</span><br>-Veinte Reales National High School<br>2017-2021</li>
+                        <li><span>Senior High School</span><br>-AICS Meycauayan Branch<br>2022-2024</li>
+                    </ul>   
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>No Experience</span><br></li>
+                    </ul>   
+                </div>
+            </div>
+        </div>
+  
+                <div class="contact-section">
+                    <div id="contact" class="container">
+                        <div class="row">
+                            <div class="contact-left">
+                                <h1>Contact Me</h1>
+                                <p>altabanodave3@gmail.com</p>
+                                <p>09107284818</p>
+                                <div class="social-icons"> 
+                                   <a href=""></a><i class="fa-brands fa-facebook"></i>
+                                </div>
+                            </div>
+                            <div class="contact-right">  
+                            </div>
+    
+          
+                
+                <script>
+                    var tablinks = document.getElementsByClassName("tab-links");
+                    var tabcontents = document.getElementsByClassName("tab-contents");
+                
+                    function opentab(tabname){
+                        for (tablink of tablinks){
+                            tablink.classList.remove("active-link");
+                        }
+                        for (tabcontent of tabcontents){
+                            tabcontent.classList.remove("active-tab");
+                        }
+                        event.currentTarget.classList.add("active-link");
+                        document.getElementById(tabname).classList.add("active-tab");
+                    }
+                </script>
+            
+                </body>
+                
+                
